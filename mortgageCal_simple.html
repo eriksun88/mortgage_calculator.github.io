@@ -1,0 +1,30 @@
+<!Doctype html>
+<html>
+<head> <title>Calculator</title> 
+<script language="javascript" src="mortgage_calculator.js" type="text/javascript"></script>
+<link rel="stylesheet" href="mor_calculator.css">
+</head> 
+<body>
+
+<body><h3>Example of a Simple </h3> 
+<h1>Mortgage Calculator</h1> 
+<div class="simp-div">
+	<form name='mortgagecalc' method='POST'>
+	<p>How much will you be borrowing?<br/>
+	<input type='text'  name='loan' size=10> <span class="simp-error" id="loanError"></span></p>
+	<p>What will be the term of this mortgage (in years)?<br/>
+	<input type='text'  name='years' size=5> <span class="simp-error" id="yearsError"></span></p>
+	<p>What will be the interest rate?<br/>
+	<input type='text'  name='rate' size=5> <span class="simp-error" id="rateError"></span></p>
+	<input type='button' onClick="return cusPayment()" value='Calculate'>  <input type='button' onClick="return cusPaymentReset()" value='Reset'>
+	</form>
+	<br/>
+	<small>Instructions: Enter numbers and decimal points. No commas or other characters.</small>
+	<p class="simp-monthlypayment" id="monthlyPayment"> </p>
+	<p class="simp-friendlyreminder" id="friendlyReminder">This is your principal + interest payment, or in other words, what you send to the bank each month. 
+	But remember, you will also have to budget for homeowners insurance, real estate taxes, and if you are unable to afford a 20% down payment, 
+	Private Mortgage Insurance (PMI). These additional costs could increase your monthly outlay by as much 50%, sometimes more.</p>
+</div>
+
+</body> 
+</html>
